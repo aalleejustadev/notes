@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: AdobeCleanRegular;
+	src: url('./assets/fonts/AdobeCleanRegular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'AdobeCleanBold';
+	src: url('./assets/fonts/AdobeCleanBold.ttf') format('truetype');
+}
+
+html,
+body,
+#root {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: AdobeCleanRegular, sans-serif;
+}
+
+@layer base {
+	body {
+		@apply text-tana-800;
+	}
+}
